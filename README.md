@@ -2,10 +2,26 @@
 
 A structured, market-aligned study plan to become an AI Engineer — focused on what companies actually hire for today: LLM integration, RAG, evaluation, production systems, and cost optimization.
 
-**Profile:** Intermediate Python, moderate math, familiar with AI tools
-**Commitment:** 10-20 hours/week
-**Structure:** 5 phases over ~6-7 months
-**Philosophy:** LLM-first, production-focused, build real projects
+**Profile:** Intermediate Python, moderate math, familiar with AI tools (Claude Code, etc.)
+**Commitment:** 15-25 hours/week
+**Structure:** 5 phases over 12 weeks (3 months)
+**Philosophy:** LLM-first, production-focused, learn by building with AI assistance
+
+---
+
+## Why 3 Months Is Possible
+
+This accelerated timeline works because:
+
+| Traditional Learning | Learning with Claude |
+|---------------------|---------------------|
+| Watch 4-hour course → take notes → get stuck → search forums | Ask Claude → get tailored explanation → build immediately |
+| Debug alone for hours | Explain error → get fix + understanding in seconds |
+| Read docs hoping to understand | "Explain this like I'm a backend dev" → instant clarity |
+| Build alone, hope it's right | Real-time pair programming and code review |
+| Wait for course to cover your question | Ask exactly what you need, when you need it |
+
+**You skip hours of friction per concept.**
 
 ---
 
@@ -54,289 +70,336 @@ Tier 3 — Level up (senior/lead):
 
 ---
 
-## Ongoing Side-Track: Math (As Needed)
+## 12-Week Accelerated Timeline
 
-**Runs parallel — 2 hours/week, never blocks progress**
-
-| When | What | Resource |
-|------|------|----------|
-| Phase 1 | Linear algebra basics (vectors, matrices, dot products) | [3Blue1Brown Essence of Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) |
-| Phase 2 | Calculus intuition (gradients, chain rule) | [3Blue1Brown Essence of Calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) |
-| Phase 3+ | Probability, statistics (as needed for evaluation) | [StatQuest YouTube](https://www.youtube.com/@statquest) |
-
-> **Rule:** Learn math when you hit a concept that requires it, not upfront. Embeddings → learn dot products. Backpropagation → learn chain rule. Just-in-time, not just-in-case.
+```
+┌─────────────────────────────────────────────────────────────────┐
+│  MONTH 1: FOUNDATIONS + TRANSFORMERS                            │
+│  ┌─────────────┐  ┌─────────────┐                               │
+│  │ Week 1-2    │  │ Week 3-4    │                               │
+│  │ ML Core +   │  │ Transformers│                               │
+│  │ Embeddings  │  │ Deep-Dive   │                               │
+│  │ Project 1   │  │ Project 2   │                               │
+│  └─────────────┘  └─────────────┘                               │
+├─────────────────────────────────────────────────────────────────┤
+│  MONTH 2: LLM ENGINEERING (THE CORE)                            │
+│  ┌─────────────┐  ┌─────────────┐  ┌─────────────┐              │
+│  │ Week 5-6    │  │ Week 7-8    │  │ Week 9      │              │
+│  │ LLM APIs +  │  │ RAG         │  │ Evaluation  │              │
+│  │ Prompting   │  │ Systems     │  │ + Agents    │              │
+│  │ Project 3   │  │ Project 4   │  │ Project 5   │              │
+│  └─────────────┘  └─────────────┘  └─────────────┘              │
+├─────────────────────────────────────────────────────────────────┤
+│  MONTH 3: PRODUCTION + SPECIALIZATION                           │
+│  ┌─────────────┐  ┌─────────────┐                               │
+│  │ Week 10-11  │  │ Week 12     │                               │
+│  │ Production  │  │ Specialize  │                               │
+│  │ + Security  │  │ + Portfolio │                               │
+│  │ Project 6   │  │ Polish      │                               │
+│  └─────────────┘  └─────────────┘                               │
+└─────────────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## Phase 1: Compressed ML Foundations (Weeks 1-4)
+## Ongoing: Math (Just-in-Time)
 
-**Goal:** Understand enough ML to evaluate models, understand embeddings, and know why things work — not to become an ML researcher.
+**Learn math when you hit a concept that requires it, not upfront.**
 
-| Week | Study (40%) | Build (60%) |
-|------|------------|-------------|
-| 1 | [Andrew Ng's ML Specialization](https://www.coursera.org/specializations/machine-learning-introduction) — Course 1 only: Supervised Learning (regression, classification, evaluation) | [Kaggle Intro to ML](https://www.kaggle.com/learn/intro-to-machine-learning) micro-course |
-| 2 | Focus on: evaluation metrics, train/test splits, overfitting, cross-validation | Build a simple classifier with scikit-learn on a real dataset |
-| 3 | Embeddings deep-dive: what they are, how they represent meaning, similarity metrics | Visualize embeddings using a pre-trained model (sentence-transformers) |
-| 4 | Review + consolidate | **Project 1:** Simple ML pipeline — data → features → model → evaluation. Focus on metrics and understanding *why* the model works or fails. GitHub repo |
+| When You Encounter | Learn | Resource |
+|-------------------|-------|----------|
+| Embeddings, similarity | Dot products, cosine similarity | [3Blue1Brown Linear Algebra](https://www.youtube.com/playlist?list=PLZHQObOWTQDPD3MizzM2xVFitgF8hE_ab) Ch 1-4 |
+| Backpropagation | Chain rule, gradients | [3Blue1Brown Calculus](https://www.youtube.com/playlist?list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr) Ch 1-4 |
+| Evaluation metrics | Probability basics | [StatQuest](https://www.youtube.com/@statquest) as needed |
 
-**Key concepts to nail:**
-- [ ] Train/validation/test splits — why they matter
-- [ ] Evaluation metrics: accuracy, precision, recall, F1, AUC-ROC
+> **Rule:** Embeddings → learn dot products. Backprop → learn chain rule. Just-in-time, not just-in-case.
+
+---
+
+## Phase 1: Foundations + Embeddings (Weeks 1-2)
+
+**Goal:** Understand ML evaluation, embeddings, and why things work — in 2 weeks, not 8.
+
+### Week 1: ML Core Concepts
+
+| Focus | How to Learn |
+|-------|--------------|
+| Evaluation metrics (precision, recall, F1, AUC) | Ask Claude to explain with examples from your domain |
+| Train/test splits, overfitting | [Kaggle Intro to ML](https://www.kaggle.com/learn/intro-to-machine-learning) micro-course (3-4 hours) |
+| When to use ML vs rules vs LLMs | Discuss tradeoffs with Claude |
+
+**Build:** Simple classifier with scikit-learn. Focus on evaluation, not the model.
+
+### Week 2: Embeddings Deep-Dive
+
+| Focus | How to Learn |
+|-------|--------------|
+| What embeddings are, how they encode meaning | [What Are Word Embeddings?](https://jalammar.github.io/illustrated-word2vec/) — Jay Alammar |
+| Similarity metrics (cosine, dot product, euclidean) | Ask Claude to explain + show code |
+| Embedding models comparison | Experiment with sentence-transformers |
+
+**Project 1:** Build an embedding-based semantic search. Given a query, find similar documents. Visualize embeddings with t-SNE or UMAP. GitHub repo.
+
+**Key concepts checklist:**
+- [ ] Evaluation metrics: when to use which
 - [ ] Overfitting and how to detect it
-- [ ] What embeddings are and how similarity works
-- [ ] When ML is the right tool (vs. rules, vs. LLMs)
-
-**Reading:**
-- [Jay Alammar's visual ML guides](https://jalammar.github.io/)
-- [What Are Word Embeddings?](https://jalammar.github.io/illustrated-word2vec/) — Jay Alammar
+- [ ] What embeddings represent
+- [ ] Similarity search basics
 
 ---
 
-## Phase 2: Transformers Deep-Dive (Weeks 5-7)
+## Phase 2: Transformers Deep-Dive (Weeks 3-4)
 
-**Goal:** Understand how LLMs actually work — attention, tokenization, context windows — so you can debug and optimize, not just call APIs.
+**Goal:** Understand how LLMs actually work — attention, tokenization, context windows — so you can debug and optimize.
 
-| Week | Study (50%) | Build (50%) |
-|------|------------|-------------|
-| 5 | [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course) — Chapters 1-2 (Transformers, pipeline API) + ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) with [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) | Run Hugging Face pipelines, experiment with different models |
-| 6 | Hugging Face NLP Course — Chapters 3-4 (Tokenizers, fine-tuning basics) | Tokenize text with different tokenizers, understand token counts, context limits |
-| 7 | How LLMs are trained: pre-training, instruction tuning, RLHF. Inference vs training. | **Project 2:** Fine-tune a small model (DistilBERT or similar) on a classification task. Understand the training loop. GitHub repo |
+### Week 3: Transformer Architecture
 
-**Key concepts to nail:**
-- [ ] Self-attention mechanism (intuition, not math derivation)
-- [ ] Multi-head attention and why it matters
-- [ ] Tokenization: BPE, token counts, context windows
-- [ ] Positional encoding
+| Focus | How to Learn |
+|-------|--------------|
+| Self-attention mechanism | [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) + ask Claude to clarify |
+| Multi-head attention, positional encoding | [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course) — Chapters 1-2 |
+| Tokenization (BPE, token counts) | Experiment with different tokenizers in code |
+
+**Build:** Tokenize various texts, count tokens, understand context limits hands-on.
+
+### Week 4: How LLMs Are Trained
+
+| Focus | How to Learn |
+|-------|--------------|
+| Pre-training vs fine-tuning vs RLHF | [What Is ChatGPT Doing?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/) — Wolfram |
+| Inference parameters (temperature, top-p) | Experiment with Anthropic/OpenAI APIs |
+| Fine-tuning basics | [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course) — Chapters 3-4 |
+
+**Project 2:** Fine-tune a small model (DistilBERT) on a classification task. Understand the training loop. GitHub repo.
+
+**Key concepts checklist:**
+- [ ] Self-attention intuition
+- [ ] Tokenization and context windows
 - [ ] Pre-training vs fine-tuning vs RLHF
-- [ ] Inference: temperature, top-p, sampling strategies
+- [ ] Temperature, top-p, sampling
 
 **Reading:**
-- ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) — the original transformer paper
-- [The Illustrated Transformer](https://jalammar.github.io/illustrated-transformer/) — Jay Alammar
-- [The Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2/) — Jay Alammar
-- [What Is ChatGPT Doing?](https://writings.stephenwolfram.com/2023/02/what-is-chatgpt-doing-and-why-does-it-work/) — Stephen Wolfram
+- ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) — skim for concepts, not math
+- [The Illustrated GPT-2](https://jalammar.github.io/illustrated-gpt2/)
 
 ---
 
-## Phase 3: Applied LLM Engineering (Weeks 8-17)
+## Phase 3: Applied LLM Engineering (Weeks 5-9)
 
-**Goal:** This is the core of modern AI engineering. RAG, agents, evaluation, prompt engineering, structured outputs, MCP.
+**Goal:** This is the core. RAG, agents, evaluation, prompt engineering. Where you'll spend 50% of your time.
 
-### 3A: LLM APIs & Prompt Engineering (Weeks 8-10)
+### Week 5-6: LLM APIs + Prompt Engineering
 
-| Week | Study (40%) | Build (60%) |
-|------|------------|-------------|
-| 8 | [Anthropic Prompt Engineering Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) + [Anthropic Courses](https://github.com/anthropics/courses) | Set up [Anthropic API](https://docs.anthropic.com/en/api/getting-started) and [OpenAI API](https://platform.openai.com/docs). Build chat applications with both |
-| 9 | Prompt patterns: system prompts, few-shot, chain-of-thought, structured outputs | Build a prompt versioning system. Test prompts systematically |
-| 10 | Tool use / function calling with Claude and OpenAI | **Project 3:** LLM app with structured outputs and tool use — e.g., an assistant that can search, calculate, and return JSON. GitHub repo |
+| Focus | How to Learn |
+|-------|--------------|
+| Anthropic API (messages, system prompts, tool use) | [Anthropic API Docs](https://docs.anthropic.com/en/api/getting-started) + [Anthropic Courses](https://github.com/anthropics/courses) |
+| Prompt patterns (few-shot, chain-of-thought, structured outputs) | [Anthropic Prompt Engineering Guide](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview) |
+| Tool use / function calling | [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) examples |
 
-**Key concepts to nail:**
-- [ ] System / user / assistant message roles
+**Project 3:** LLM app with structured outputs and tool use — an assistant that can search, calculate, call APIs, and return typed JSON. GitHub repo.
+
+**Key concepts checklist:**
+- [ ] System / user / assistant roles
 - [ ] Few-shot prompting
-- [ ] Chain-of-thought reasoning
+- [ ] Chain-of-thought
 - [ ] Structured outputs (JSON mode, tool use)
-- [ ] Prompt versioning and regression testing
-- [ ] Guardrails and output validation
+- [ ] Prompt versioning
 
-### 3B: RAG — The Non-Negotiable Skill (Weeks 11-14)
+### Week 7-8: RAG — The Non-Negotiable Skill
 
-| Week | Study (40%) | Build (60%) |
-|------|------------|-------------|
-| 11 | DeepLearning.AI: [LangChain for LLM Application Dev](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/) | Build RAG from scratch (no frameworks): embed documents → store in vector DB → retrieve → generate |
-| 12 | Chunking strategies, embedding models comparison, retrieval metrics | Experiment with different chunk sizes, overlap, embedding models |
-| 13 | Vector databases deep-dive: [Chroma](https://docs.trychroma.com/), [Pinecone](https://www.pinecone.io/), [Weaviate](https://weaviate.io/). Re-ranking, hybrid search | Implement re-ranking, compare retrieval quality |
-| 14 | DeepLearning.AI: [LangChain Chat with Your Data](https://www.deeplearning.ai/short-courses/langchain-chat-with-your-data/) | **Project 4:** Production-quality RAG system — PDF ingestion, chunking, retrieval, answer generation with citations. Measure retrieval quality. GitHub repo |
+| Focus | How to Learn |
+|-------|--------------|
+| RAG architecture end-to-end | DeepLearning.AI: [LangChain for LLM Application Dev](https://www.deeplearning.ai/short-courses/langchain-for-llm-application-development/) |
+| Chunking strategies | Experiment: fixed vs semantic, different sizes, overlap |
+| Vector databases | [Chroma](https://docs.trychroma.com/) (start here), [Pinecone](https://www.pinecone.io/), [Weaviate](https://weaviate.io/) |
+| Re-ranking, hybrid search | Implement and compare retrieval quality |
 
-**Key concepts to nail:**
-- [ ] Embeddings: models, dimensions, similarity metrics
+**Project 4:** Production-quality RAG system — PDF ingestion, smart chunking, retrieval with citations, answer generation. Measure retrieval quality. GitHub repo.
+
+**Key concepts checklist:**
 - [ ] Chunking: size, overlap, semantic vs fixed
-- [ ] Vector databases: indexing, querying, filtering
-- [ ] Retrieval quality: precision, recall, MRR
-- [ ] Re-ranking and hybrid search
-- [ ] Caching strategies for embeddings
+- [ ] Vector DB: indexing, querying, filtering, metadata
+- [ ] Retrieval metrics: precision, recall, MRR
+- [ ] Re-ranking strategies
+- [ ] Caching for embeddings
 
-### 3C: Evaluation — Where Seniors Stand Out (Weeks 15-16)
+### Week 9: Evaluation + Agents
 
-| Week | Study (40%) | Build (60%) |
-|------|------------|-------------|
-| 15 | LLM evaluation approaches: [RAGAS](https://docs.ragas.io/), [DeepEval](https://docs.confident-ai.com/). Human-in-the-loop workflows | Build an evaluation pipeline for your RAG project |
-| 16 | Golden datasets, A/B testing prompts, offline vs online evaluation | **Add to Project 4:** Comprehensive evaluation suite — automated metrics + golden dataset + regression tests |
+| Focus | How to Learn |
+|-------|--------------|
+| LLM evaluation without ground truth | [RAGAS](https://docs.ragas.io/), [DeepEval](https://docs.confident-ai.com/) |
+| RAG metrics (faithfulness, relevance) | Build evaluation pipeline for Project 4 |
+| Agent patterns (ReAct, tool use, memory) | DeepLearning.AI: [Building Agentic RAG](https://www.deeplearning.ai/short-courses/) |
+| MCP (Model Context Protocol) | [MCP Docs](https://modelcontextprotocol.io/) |
 
-**Key concepts to nail:**
+**Project 5:** AI agent with multi-step reasoning, multiple tools, memory, and error handling. Add evaluation suite to Project 4. GitHub repo.
+
+**Key concepts checklist:**
 - [ ] Evaluation without ground truth
-- [ ] RAG metrics: faithfulness, relevance, context precision
-- [ ] Golden datasets and how to build them
-- [ ] A/B testing prompts and models
-- [ ] Human evaluation workflows
-- [ ] Regression testing for prompts
+- [ ] RAG metrics: faithfulness, context precision
+- [ ] Golden datasets
+- [ ] ReAct pattern
+- [ ] Agent memory (short-term, long-term)
+- [ ] MCP basics
 
-### 3D: Agents & Tool Use (Weeks 17)
-
-| Week | Study (40%) | Build (60%) |
-|------|------------|-------------|
-| 17 | DeepLearning.AI: [Building Agentic RAG](https://www.deeplearning.ai/short-courses/). ReAct pattern, planning, memory. [MCP (Model Context Protocol)](https://modelcontextprotocol.io/) | **Project 5:** AI agent — multi-step reasoning, multiple tools, memory, error handling. GitHub repo |
-
-**Key concepts to nail:**
-- [ ] ReAct pattern (Reasoning + Acting)
-- [ ] Tool use and function calling
-- [ ] Agent memory (short-term and long-term)
-- [ ] Planning and task decomposition
-- [ ] MCP for connecting LLMs to external systems
-- [ ] When agents are overkill vs necessary
-
-**Reading for Phase 3:**
-- [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook) — real code patterns
+**Reading:**
 - [LLM Powered Autonomous Agents](https://lilianweng.github.io/posts/2023-06-23-agent/) — Lilian Weng
-- [RAG paper](https://arxiv.org/abs/2005.11401) — "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"
-- [Anthropic Research Blog](https://www.anthropic.com/research)
+- [RAG paper](https://arxiv.org/abs/2005.11401)
 
 ---
 
-## Phase 4: Production AI Systems (Weeks 18-23)
+## Phase 4: Production AI Systems (Weeks 10-11)
 
-**Goal:** Ship reliable, cost-effective, secure AI applications. This is what separates demos from products.
+**Goal:** Ship reliable, cost-effective, secure AI applications. This separates demos from products.
 
-### 4A: Backend Engineering for AI (Weeks 18-19)
+### Week 10: Backend + Deployment
 
-| Week | Study (40%) | Build (60%) |
-|------|------------|-------------|
-| 18 | [FastAPI tutorial](https://fastapi.tiangolo.com/tutorial/) — async, dependencies, error handling | Build an API wrapper around your RAG project |
-| 19 | [Docker fundamentals](https://docs.docker.com/get-started/). Async patterns, streaming responses | Containerize your application. Implement streaming for LLM responses |
+| Focus | How to Learn |
+|-------|--------------|
+| FastAPI for AI apps | [FastAPI Tutorial](https://fastapi.tiangolo.com/tutorial/) — async, streaming |
+| Docker | [Docker Get Started](https://docs.docker.com/get-started/) |
+| Streaming LLM responses | Implement in your API |
+| Cloud deployment | AWS Lambda / GCP Cloud Run / Railway |
 
-**Key concepts to nail:**
-- [ ] Async Python (asyncio, aiohttp)
-- [ ] Error handling and timeouts for LLM calls
-- [ ] Streaming responses
+**Build:** Containerize and deploy Project 4 or 5 as an API with streaming.
+
+### Week 11: Cost, Performance, Security
+
+| Focus | How to Learn |
+|-------|--------------|
+| Token cost management | Build cost tracking into your app |
+| Caching strategies (Redis) | Cache embeddings and repeated queries |
+| Model routing (cheap → expensive) | Implement Haiku-first, Sonnet-fallback |
+| LLM security | Prompt injection, PII handling, output filtering |
+| Observability | [LangSmith](https://smith.langchain.com/) or [Helicone](https://helicone.ai/) |
+
+**Project 6:** Production-deployed full stack — API + RAG + caching + cost tracking + security layers + monitoring + CI/CD. GitHub repo with deployment instructions.
+
+**Key concepts checklist:**
+- [ ] Async Python, streaming
 - [ ] Docker containerization
-- [ ] API design (REST, request validation)
-
-### 4B: Cost & Performance (Weeks 20-21)
-
-| Week | Study (40%) | Build (60%) |
-|------|------------|-------------|
-| 20 | Token cost management, context window optimization, caching strategies | Implement caching (Redis or similar) for embeddings and LLM responses |
-| 21 | Model selection tradeoffs (Claude Haiku vs Sonnet vs Opus, GPT-4 vs GPT-4-mini), batch vs real-time | Add cost tracking and optimization to your project. Implement model routing |
-
-**Key concepts to nail:**
 - [ ] Token counting and cost calculation
-- [ ] Aggressive caching strategies
-- [ ] Context window optimization
-- [ ] Model routing (cheap model first, expensive if needed)
-- [ ] Batch vs real-time tradeoffs
-- [ ] Latency optimization
-
-### 4C: LLM Security (Week 22)
-
-| Week | Study (40%) | Build (60%) |
-|------|------------|-------------|
-| 22 | Prompt injection attacks, data leakage, PII handling, output filtering | Add security layers to your project: input validation, output filtering, PII detection |
-
-**Key concepts to nail:**
-- [ ] Prompt injection (direct and indirect)
-- [ ] Data leakage prevention
-- [ ] PII detection and handling
-- [ ] Output filtering and validation
-- [ ] Tool misuse prevention
-
-### 4D: Deployment & Observability (Week 23)
-
-| Week | Study (40%) | Build (60%) |
-|------|------------|-------------|
-| 23 | Cloud deployment (AWS Lambda, GCP Cloud Run, or similar). LLM observability ([LangSmith](https://smith.langchain.com/), [Helicone](https://helicone.ai/)). CI/CD for AI | **Project 6:** Deploy your full stack — API + RAG + caching + monitoring + CI/CD. GitHub repo with deployment instructions |
-
-**Key concepts to nail:**
-- [ ] Cloud deployment options
-- [ ] CI/CD pipelines for AI applications
-- [ ] Monitoring: latency, cost, error rates
-- [ ] Logging and tracing LLM calls
-- [ ] Rollback strategies
-- [ ] Model and prompt versioning in production
+- [ ] Caching strategies
+- [ ] Model routing
+- [ ] Prompt injection defense
+- [ ] PII detection
+- [ ] CI/CD for AI apps
+- [ ] Monitoring and observability
 
 ---
 
-## Phase 5: Specialization & Depth (Weeks 24-28+)
+## Phase 5: Specialization + Portfolio (Week 12)
 
-**Goal:** Go deep in one area. Build authority. Contribute to the ecosystem.
+**Goal:** Pick a direction, polish your portfolio, prepare for opportunities.
 
-| Week | Focus |
-|------|-------|
-| 24-25 | **Choose your specialization:** Conversational AI, RAG Systems, AI Agents, LLM Security, AI Infrastructure. Read 4-5 key papers/posts in that area |
-| 26-27 | **Advanced project** — something novel, not a tutorial clone. Multi-agent system, domain-specific RAG, fine-tuned model, security toolkit |
-| 28+ | **Contribute to open source** ([LangChain](https://github.com/langchain-ai/langchain), [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook), [Hugging Face](https://github.com/huggingface)). Write about what you learned |
+### Week 12: Specialize and Ship
+
+| Focus | Action |
+|-------|--------|
+| Choose specialization | RAG Systems, AI Agents, LLM Security, AI Infrastructure, or Fine-tuning |
+| Portfolio polish | Clean READMEs, add diagrams, record demo videos |
+| Write about your learning | Blog post or detailed GitHub docs |
+| Open source | One PR to LangChain, Anthropic Cookbook, or similar |
 
 **Specialization options:**
 
-| Track | Focus Areas |
-|-------|-------------|
-| Conversational AI | Multi-turn memory, personality, safety, dialogue management |
-| RAG Systems | Advanced retrieval, re-ranking, evaluation, domain adaptation |
-| AI Agents | Planning, tool use, multi-agent coordination, reliability |
-| LLM Security | Red teaming, prompt injection defense, guardrails, compliance |
-| AI Infrastructure | Scaling, cost optimization, observability, platform building |
-| Fine-tuning | LoRA/QLoRA, dataset curation, evaluation, deployment |
+| Track | What to Build |
+|-------|---------------|
+| RAG Systems | Advanced retrieval with re-ranking, evaluation dashboard |
+| AI Agents | Multi-agent system, complex tool orchestration |
+| LLM Security | Red team toolkit, guardrail library |
+| AI Infrastructure | LLM gateway with routing, caching, observability |
+| Fine-tuning | LoRA fine-tune for specific domain, evaluation suite |
 
 ---
 
-## Weekly Routine (~15 hours/week)
+## Weekly Schedule (~20 hours/week)
 
 ```
-Mon-Tue:     Course material — videos + reading (4 hrs)
-Wed:         Hands-on exercises, API experimentation (2 hrs)
-Thu-Fri:     Project work (6 hrs)
-Sat:         Math (as needed) + 1 paper/blog (2 hrs)
-Sun:         Rest or light review
+Monday:      Study — docs, courses, papers (3 hrs)
+Tuesday:     Study + hands-on exercises (3 hrs)
+Wednesday:   Build — project work with Claude (4 hrs)
+Thursday:    Build — project work with Claude (4 hrs)
+Friday:      Build — finish weekly milestone (3 hrs)
+Saturday:    Review + math if needed + reading (2 hrs)
+Sunday:      Rest or light exploration
 ```
 
 ---
 
-## GitHub Portfolio at the End
+## How to Use Claude Effectively
+
+```python
+# Learning a concept
+"Explain [embeddings] like I'm a backend dev who knows Python
+ but is new to ML. Give me a concrete code example."
+
+# Building
+"I want to build [RAG system]. Walk me through the architecture
+ first, then let's implement step by step."
+
+# Debugging understanding
+"I don't understand why [attention] works. What's the intuition?
+ Skip the math, give me the mental model."
+
+# Code review
+"Review this [RAG implementation]. What would a senior AI engineer
+ at Anthropic change? Be specific."
+
+# Unstuck
+"I'm getting [error]. Here's my code. What's wrong and why?"
+```
+
+---
+
+## GitHub Portfolio at Week 12
 
 | # | Project | What It Demonstrates |
 |---|---------|---------------------|
-| 1 | ML pipeline with evaluation | Understand metrics, train/test, model selection |
-| 2 | Fine-tuned transformer | How LLMs work, training loop, Hugging Face |
-| 3 | LLM app with tools + structured output | API integration, prompt engineering, tool use |
-| 4 | RAG system with evaluation suite | Embeddings, retrieval, chunking, quality measurement |
+| 1 | Semantic search with embeddings | Embeddings, similarity, evaluation basics |
+| 2 | Fine-tuned classifier | Transformers, training loop, Hugging Face |
+| 3 | LLM app with tools | API integration, structured outputs, tool use |
+| 4 | RAG system + evaluation | Chunking, retrieval, vector DB, metrics |
 | 5 | AI agent with memory | Multi-step reasoning, planning, error handling |
-| 6 | Production-deployed full stack | Docker, API, caching, monitoring, CI/CD, cloud |
+| 6 | Production full stack | Docker, API, caching, security, monitoring, cloud |
 
 ---
 
-## Key Milestones
+## Weekly Milestones
 
-| Week | You should be able to... |
-|------|--------------------------|
-| 4 | Understand ML evaluation, embeddings, when to use what |
-| 7 | Explain how transformers work, fine-tune a model |
-| 14 | Build production-quality RAG systems, measure retrieval quality |
-| 17 | Build agents with tools and memory |
-| 23 | Deploy, monitor, and optimize LLM applications in production |
-| 28 | Have a specialization and contribute to open source |
+| Week | Milestone | Proof |
+|------|-----------|-------|
+| 2 | Understand embeddings, built semantic search | Project 1 on GitHub |
+| 4 | Explain transformers, fine-tuned a model | Project 2 on GitHub |
+| 6 | Build LLM apps with tools and structured outputs | Project 3 on GitHub |
+| 8 | Build production-quality RAG | Project 4 on GitHub |
+| 9 | Build agents, evaluate LLM systems | Project 5 on GitHub |
+| 11 | Deploy secure, cost-optimized AI app | Project 6 on GitHub |
+| 12 | Specialization chosen, portfolio polished | All projects documented |
 
 ---
 
 ## Core Skills Checklist
 
-### Tier 1: Get Hired
-- [ ] RAG: embeddings, chunking, retrieval, vector databases
+### Tier 1: Get Hired (Weeks 1-9)
+- [ ] Embeddings and similarity search
+- [ ] RAG: chunking, retrieval, vector databases
 - [ ] LLM APIs: Anthropic, OpenAI — structured outputs, tool use
-- [ ] Prompt engineering: versioning, testing, guardrails
-- [ ] Backend: Python, async, APIs, error handling
+- [ ] Prompt engineering: few-shot, CoT, versioning
 - [ ] Basic evaluation: know if your system works
 
-### Tier 2: Stand Out
-- [ ] Advanced evaluation: golden datasets, A/B testing, RAGAS
-- [ ] Cost optimization: caching, batching, model routing
-- [ ] Agents: planning, tool use, memory, MCP
-- [ ] LLM security: prompt injection, PII, output filtering
-- [ ] Production: monitoring, CI/CD, rollback
+### Tier 2: Stand Out (Weeks 9-11)
+- [ ] Advanced evaluation: RAGAS, golden datasets
+- [ ] Cost optimization: caching, model routing
+- [ ] Agents: ReAct, tool use, memory, MCP
+- [ ] LLM security: prompt injection, PII
+- [ ] Production: Docker, CI/CD, monitoring
 
-### Tier 3: Senior/Lead
+### Tier 3: Keep Growing (Week 12+)
 - [ ] Product judgment: when NOT to use LLMs
 - [ ] Fine-tuning: LoRA, dataset curation
-- [ ] Multi-modal: vision, audio integration
-- [ ] System design: architecture at scale
-- [ ] Deep transformer knowledge: debugging, optimization
+- [ ] System design at scale
+- [ ] Open source contributions
 
 ---
 
@@ -348,51 +411,57 @@ Sun:         Rest or light review
 - [Anthropic Courses](https://github.com/anthropics/courses)
 - [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook)
 - [Model Context Protocol (MCP)](https://modelcontextprotocol.io/)
-- [OpenAI API Docs](https://platform.openai.com/docs)
 - [LangChain Documentation](https://python.langchain.com/docs/get_started/introduction)
 
-### Courses
-- [Andrew Ng's ML Specialization](https://www.coursera.org/specializations/machine-learning-introduction) — Course 1 only for foundations
-- [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course) — free, essential
+### Short Courses (Do These)
+- [Hugging Face NLP Course](https://huggingface.co/learn/nlp-course) — Chapters 1-4 only
 - [DeepLearning.AI Short Courses](https://www.deeplearning.ai/short-courses/) — LangChain, RAG, Agents
-- [Generative AI with LLMs](https://www.coursera.org/learn/generative-ai-with-llms) — AWS + DeepLearning.AI
+- [Kaggle Intro to ML](https://www.kaggle.com/learn/intro-to-machine-learning) — 3-4 hours
 
-### Evaluation Tools
+### Evaluation & Observability
 - [RAGAS](https://docs.ragas.io/) — RAG evaluation
-- [DeepEval](https://docs.confident-ai.com/) — LLM testing framework
-- [Braintrust](https://www.braintrust.dev/) — LLM evaluation platform
+- [DeepEval](https://docs.confident-ai.com/) — LLM testing
+- [LangSmith](https://smith.langchain.com/) — observability
+- [Helicone](https://helicone.ai/) — LLM monitoring
 
-### Observability
-- [LangSmith](https://smith.langchain.com/) — LangChain's observability
-- [Helicone](https://helicone.ai/) — LLM observability
-- [Portkey](https://portkey.ai/) — LLM gateway
+### Visual Guides (Essential)
+- [Jay Alammar](https://jalammar.github.io/) — Illustrated Transformer, GPT-2, BERT, Word2Vec
+- [Lilian Weng](https://lilianweng.github.io/) — LLM Agents, RAG
+- [3Blue1Brown](https://www.youtube.com/@3blue1brown) — Math when needed
 
-### Blogs & Visual Guides
-- [Jay Alammar](https://jalammar.github.io/) — essential visual explanations
-- [Lilian Weng](https://lilianweng.github.io/) — in-depth AI research
-- [Simon Willison](https://simonwillison.net/) — LLM ecosystem tracking
-- [Latent Space](https://www.latent.space/) — AI engineering podcast/blog
-
-### Key Papers
-- ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) — Transformers
-- ["Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks"](https://arxiv.org/abs/2005.11401) — RAG
+### Key Papers (Skim, Don't Study)
+- ["Attention Is All You Need"](https://arxiv.org/abs/1706.03762) — understand the concepts
+- ["RAG for Knowledge-Intensive NLP"](https://arxiv.org/abs/2005.11401) — understand the pattern
 
 ---
 
 ## What's Different About This Plan
 
-Compared to traditional ML/AI curricula:
-
-| Traditional (2020-2023) | This Plan (2025) |
-|------------------------|------------------|
-| 8+ weeks on classical ML | 4 weeks compressed |
-| 12 weeks on deep learning | 3 weeks on transformers only |
-| LLMs as final topic | LLMs as the core focus |
-| Training models | Using models well |
-| Kaggle competitions | Production projects |
-| 10-12 months | 6-7 months |
-| First LLM project at week 21 | First LLM project at week 8 |
+| Traditional (2020-2023) | This Plan (2025, 3 months) |
+|------------------------|---------------------------|
+| 8+ weeks on classical ML | 2 weeks, focused on evaluation + embeddings |
+| 12 weeks on deep learning | 2 weeks, transformers only |
+| First LLM project at week 21 | First LLM project at week 5 |
+| Learn alone, get stuck | Learn with Claude, build faster |
+| 10-12 months | 12 weeks |
+| Courses then projects | Projects from day 1 |
 
 ---
 
-> **Note:** The industry moves fast. This plan reflects 2025 hiring reality. Review and adjust every 6 months. The fundamentals (how transformers work, evaluation thinking, production skills) will remain valuable. The specific tools may change.
+## The 3-Month Commitment
+
+```
+Week 1-2:   Foundations + Embeddings     → Project 1
+Week 3-4:   Transformers                 → Project 2
+Week 5-6:   LLM APIs + Prompting         → Project 3
+Week 7-8:   RAG Systems                  → Project 4
+Week 9:     Evaluation + Agents          → Project 5
+Week 10-11: Production + Security        → Project 6
+Week 12:    Specialize + Polish          → Portfolio ready
+```
+
+**By week 12:** 6 projects on GitHub, production deployment experience, evaluation skills, and a specialization direction.
+
+---
+
+> **Note:** This is aggressive but achievable with focused effort and AI-assisted learning. The key is building every week, not just consuming content. You learn by doing, and Claude accelerates the doing.
