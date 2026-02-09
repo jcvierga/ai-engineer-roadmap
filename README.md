@@ -48,7 +48,7 @@ This roadmap reflects the 2025 reality of AI engineering hiring:
 ## Priority Stack
 
 ```
-Tier 1 — Get hired (must-have):
+Tier 1 — Start Growing (must-have):
   ├── RAG (embeddings, chunking, retrieval, vector DBs)
   ├── LLM APIs (Anthropic, OpenAI — tool use, structured outputs)
   ├── Backend skills (Python, APIs, async, error handling)
@@ -383,7 +383,7 @@ Sunday:      Rest or light exploration
 
 ## Core Skills Checklist
 
-### Tier 1: Get Hired (Weeks 1-9)
+### Tier 1: Start Growing (Weeks 1-9)
 - [ ] Embeddings and similarity search
 - [ ] RAG: chunking, retrieval, vector databases
 - [ ] LLM APIs: Anthropic, OpenAI — structured outputs, tool use
