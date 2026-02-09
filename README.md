@@ -7,6 +7,8 @@ A structured, market-aligned study plan to become an AI Engineer — focused on 
 **Structure:** 5 phases over 12 weeks (3 months)
 **Philosophy:** LLM-first, production-focused, learn by building with AI assistance
 
+> **Need more time?** See the [Extended Version (6-7 months)](./extended/README.md) for a slower pace at 10-15 hours/week.
+
 ---
 
 ## Why 3 Months Is Possible
